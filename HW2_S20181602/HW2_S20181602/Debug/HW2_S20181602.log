@@ -1,0 +1,6 @@
+﻿  HW2_S20181602.cpp
+C:\Users\SOGANG\Desktop\algo\HW2_S20181602\HW2_S20181602\HW2_S20181602.cpp(33,15): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\SOGANG\Desktop\algo\HW2_S20181602\HW2_S20181602\HW2_S20181602.cpp(23,10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SOGANG\Desktop\algo\HW2_S20181602\HW2_S20181602\HW2_S20181602.cpp(29,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SOGANG\Desktop\algo\HW2_S20181602\HW2_S20181602\HW2_S20181602.cpp(17,23): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+  HW2_S20181602.vcxproj -> C:\Users\SOGANG\Desktop\algo\HW2_S20181602\Debug\HW2_S20181602.exe
