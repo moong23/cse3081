@@ -13,7 +13,7 @@ int cmp(const void *a, const void *b)
 
 int main()
 {
-    FILE *fp;
+    FILE *fp, *fin, *fout;
     int func, num, i, j;
     char input[20], output[20];
     double time_spent;
@@ -27,15 +27,25 @@ int main()
         return -1;
     }
     fscanf(fp, "%d%d%s%s", &func, &num, input, output);
+    fclose(fp);
 
     Arr = (ELEMENT *)malloc(sizeof(ELEMENT) * num);
 
+    fin = fopen(input, "rb");
+    fout = fopen(output, "wb");
+
+    for (i = 0; i < num; i++)
+    {
+        fread(&Arr[i], sizeof(ELEMENT), 1, fin);
+    }
+
+    /*
     srand(time(NULL));
     for (i = 0; i < num; i++)
     {
         Arr[i].score = rand() % 100000;
     }
-    /*
+    
     for (i = 0; i < 100; i++) {
         printf("%d ", Arr[i].score);
     }
@@ -48,6 +58,10 @@ int main()
         end = clock();
         time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
         printf("time used while execution: %lf\n", time_spent);
+        for (i = 0; i < num; i++)
+        {
+            fwrite(&Arr[i], sizeof(ELEMENT), 1, fout);
+        }
 #ifdef PRINT_ARRAY
         for (i = 0; i < MAX_STRING; i++)
         {
@@ -61,6 +75,10 @@ int main()
         end = clock();
         time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
         printf("time used while execution: %lf\n", time_spent);
+        for (i = 0; i < num; i++)
+        {
+            fwrite(&Arr[i], sizeof(ELEMENT), 1, fout);
+        }
 #ifdef PRINT_ARRAY
         for (i = 0; i < MAX_STRING; i++)
         {
@@ -74,6 +92,10 @@ int main()
         end = clock();
         time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
         printf("time used while execution: %lf\n", time_spent);
+        for (i = 0; i < num; i++)
+        {
+            fwrite(&Arr[i], sizeof(ELEMENT), 1, fout);
+        }
 #ifdef PRINT_ARRAY
         for (i = 0; i < num; i++)
         {
@@ -87,6 +109,10 @@ int main()
         end = clock();
         time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
         printf("time used while execution: %lf\n", time_spent);
+        for (i = 0; i < num; i++)
+        {
+            fwrite(&Arr[i], sizeof(ELEMENT), 1, fout);
+        }
 #ifdef PRINT_ARRAY
         for (i = 0; i < num; i++)
         {
