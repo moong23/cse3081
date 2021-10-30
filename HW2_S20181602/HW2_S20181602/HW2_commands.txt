@@ -1,4 +1,4 @@
-1
-10000
-unsorted_array.bin
+21
+100000
+input2^13.bin
 sorted_array.bin

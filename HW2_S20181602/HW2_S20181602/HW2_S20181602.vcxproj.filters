@@ -32,4 +32,15 @@
       <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="input2^13.bin">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="input2^17.bin">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="sorted_array.bin">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
 </Project>

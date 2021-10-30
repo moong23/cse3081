@@ -150,6 +150,11 @@
   <ItemGroup>
     <ClInclude Include="my_quick_sorts.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="input2^13.bin" />
+    <None Include="input2^17.bin" />
+    <None Include="sorted_array.bin" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
