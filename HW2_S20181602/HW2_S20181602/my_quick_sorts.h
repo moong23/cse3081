@@ -14,7 +14,7 @@ typedef struct
 } ELEMENT;
 
 typedef int _Cmpfun(const void *, const void *);
-void swap(char*, char*, size_t);
-void qsort_orig(void*, size_t, size_t, _Cmpfun);
-void qsort_median_insert(void*, size_t, size_t, _Cmpfun);
-void qsort_median_insert_iter(void*, size_t, size_t, _Cmpfun);
+void swap(char *, char *, size_t);
+void qsort_orig(void *, size_t, size_t, _Cmpfun);
+void qsort_median_insert(void *, size_t, size_t, _Cmpfun);
+void qsort_median_insert_iter(void *, size_t, size_t, _Cmpfun);

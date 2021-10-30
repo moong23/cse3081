@@ -13,11 +13,11 @@ int cmp(const void *a, const void *b)
 
 int main()
 {
-    FILE* fp;
+    FILE *fp;
     int func, num, i, j;
     char input[20], output[20];
     double time_spent;
-    ELEMENT* Arr;
+    ELEMENT *Arr;
     clock_t begin = 0, end = 0;
 
     fp = fopen("HW2_commands.txt", "r");
@@ -28,7 +28,7 @@ int main()
     }
     fscanf(fp, "%d%d%s%s", &func, &num, input, output);
 
-    Arr = (ELEMENT*)malloc(sizeof(ELEMENT) * num);
+    Arr = (ELEMENT *)malloc(sizeof(ELEMENT) * num);
 
     srand(time(NULL));
     for (i = 0; i < num; i++)
@@ -49,7 +49,8 @@ int main()
         time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
         printf("time used while execution: %lf\n", time_spent);
 #ifdef PRINT_ARRAY
-        for (i = 0; i < MAX_STRING; i++) {
+        for (i = 0; i < MAX_STRING; i++)
+        {
             printf("%d ", Arr[i].score);
         }
 #endif
@@ -61,7 +62,8 @@ int main()
         time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
         printf("time used while execution: %lf\n", time_spent);
 #ifdef PRINT_ARRAY
-        for (i = 0; i < MAX_STRING; i++) {
+        for (i = 0; i < MAX_STRING; i++)
+        {
             printf("%d ", Arr[i].score);
         }
 #endif
@@ -73,8 +75,9 @@ int main()
         time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
         printf("time used while execution: %lf\n", time_spent);
 #ifdef PRINT_ARRAY
-        for (i = 0; i < num; i++) {
-            printf("%d :%u\n", i,Arr[i].score);
+        for (i = 0; i < num; i++)
+        {
+            printf("%d :%u\n", i, Arr[i].score);
         }
 #endif
         break;
@@ -85,8 +88,9 @@ int main()
         time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
         printf("time used while execution: %lf\n", time_spent);
 #ifdef PRINT_ARRAY
-        for (i = 0; i < num; i++) {
-            printf("%d : %u\n", i+1,Arr[i].score);
+        for (i = 0; i < num; i++)
+        {
+            printf("%d : %u\n", i + 1, Arr[i].score);
         }
 #endif
         break;
