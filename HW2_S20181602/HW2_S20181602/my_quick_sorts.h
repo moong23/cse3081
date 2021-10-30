@@ -4,6 +4,7 @@
 #include <math.h>
 #include <time.h>
 #define INS_SORT_SIZE 20
+#define MAX_STRING 20
 
 typedef struct
 {

@@ -1,4 +1,4 @@
+23
 21
-1000000
 unsorted_array.bin
 sorted_array.bin
