@@ -1,5 +1,5 @@
 #include "my_quick_sorts.h"
-#define PRINT_ARRAY
+//#define PRINT_ARRAY
 
 int cmp(const void *a, const void *b)
 {
@@ -94,6 +94,5 @@ int main()
         puts("wrong input");
         return -1;
     }
-
     return 0;
 }

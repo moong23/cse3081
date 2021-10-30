@@ -10,24 +10,6 @@ void swap(char* x, char* y, size_t size) {
 		memcpy(y, buf, m);
 	}
 }
-/*
- size_t partition(void* Arr, size_t n, size_t size, _Cmpfun* cmp, size_t pivot) {
-	char* S = (char*)Arr;
-	char* p = (char*)malloc(sizeof(char) * size);
-	size_t i = 0, k = 0;
-	memcpy(p, S + pivot * size, size);
-	swap(S + pivot * size, S + (n - 1) * size, size);
-	for (i = 0; i < (n - 1) * size; i += size) {
-		if ((*cmp)(S + i, p) <= 0) {
-			swap(S + k * size, S + i, size);
-			k++;
-		}
-	}
-	swap(S + (n - 1) * size, S + k * size, size);
-	free(p);
-	return k;
-}
-*/
  
 size_t partition(void* Arr, size_t n, size_t size, _Cmpfun* cmp) {
 	char* S = (char*)Arr;
@@ -100,10 +82,7 @@ void insertion_sort(void* Arr, size_t n, size_t size, _Cmpfun* cmp) {
 			if (j == 0)break;
 		}
 		i+=size;
-
 	}
-
-
 }
 
 // function 22
@@ -166,5 +145,4 @@ void qsort_median_insert_iter(void* Arr, size_t n, size_t size, _Cmpfun *cmp)
 		}
 	}
 	return;
-	
 }
